@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương 2: Quản Lý Chiến Dịch - Task Management</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .chapter-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--bg-primary);
+            min-height: 100vh;
+        }
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: var(--gradient-secondary);
+            border-radius: 15px;
+            border: 2px solid var(--border-color);
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+        }
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-color);
+            box-shadow: var(--shadow);
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-button">🏠</a>
+    
+    <div class="chapter-content">
+        <div class="chapter-header">
+            <h1>Chương 2: Quản Lý Chiến Dịch</h1>
+            <h2>Ứng Dụng Task Management</h2>
+            <p>Giống như các tướng lĩnh La Mã quản lý chiến dịch với hệ thống phân cấp rõ ràng, một ứng dụng quản lý công việc hiệu quả cần có cấu trúc logic và giao diện trực quan.</p>
+        </div>
+
+        <section>
+            <h3>🎯 Mục Tiêu Chương</h3>
+            <ul>
+                <li>Hiểu về DOM manipulation và event handling</li>
+                <li>Xây dựng ứng dụng CRUD (Create, Read, Update, Delete)</li>
+                <li>Làm việc với Local Storage</li>
+                <li>Thiết kế giao diện responsive</li>
+                <li>Áp dụng nguyên tắc UX/UI</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>🏛️ Nguyên Tắc Thiết Kế La Mã</h3>
+            <p><strong>Hierarchy (Phân Cấp):</strong> Mọi thứ đều có thứ tự rõ ràng, từ hoàng đế đến nô lệ. Trong ứng dụng, chúng ta cần phân cấp thông tin từ quan trọng nhất đến ít quan trọng.</p>
+            <p><strong>Efficiency (Hiệu Quả):</strong> Người La Mã nổi tiếng với hệ thống quản lý hiệu quả. Ứng dụng của chúng ta phải giúp người dùng hoàn thành công việc nhanh chóng.</p>
+        </section>
+
+        <section>
+            <h3>📝 Cấu Trúc HTML Cơ Bản</h3>
+            <p>Ứng dụng task management cần có:</p>
+            <ul>
+                <li>Form nhập task mới</li>
+                <li>Danh sách các task</li>
+                <li>Bộ lọc theo trạng thái</li>
+                <li>Thống kê tổng quan</li>
+                <li>Chức năng chỉnh sửa và xóa</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>🎨 CSS Styling</h3>
+            <p>Áp dụng theme La Mã với:</p>
+            <ul>
+                <li>Màu sắc: nâu, cam, vàng (màu của đế chế)</li>
+                <li>Typography: font serif cho tiêu đề</li>
+                <li>Layout: Grid và Flexbox</li>
+                <li>Animations: smooth transitions</li>
+                <li>Responsive design</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>⚡ JavaScript Functionality</h3>
+            <p>Các chức năng chính:</p>
+            <ul>
+                <li>Thêm task mới</li>
+                <li>Đánh dấu hoàn thành</li>
+                <li>Chỉnh sửa nội dung</li>
+                <li>Xóa task</li>
+                <li>Lọc theo trạng thái</li>
+                <li>Lưu trữ local storage</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>🏋️ Bài Tập Thực Hành</h3>
+            <p><strong>Nhiệm vụ:</strong> Mở rộng ứng dụng với:</p>
+            <ol>
+                <li>Thêm deadline cho mỗi task</li>
+                <li>Tạo categories cho tasks</li>
+                <li>Thêm tính năng tìm kiếm</li>
+                <li>Tạo export/import data</li>
+                <li>Thêm dark mode</li>
+            </ol>
+        </section>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="chapter3.html" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                <span>Chương Tiếp Theo</span>
+                <span>→</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương 1: Chiến Lược Đế Chế - Portfolio Cá Nhân</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .chapter-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.8;
+        }
+        
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: var(--gradient-secondary);
+            border-radius: 15px;
+        }
+        
+        .code-example {
+            background: #2C1810;
+            color: #F5F5DC;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            overflow-x: auto;
+        }
+        
+        .code-example pre {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .highlight {
+            background: var(--accent-color);
+            color: var(--text-dark);
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+        }
+        
+        .demo-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: var(--shadow);
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-button">🏠</a>
+    
+    <div class="chapter-content">
+        <div class="chapter-header">
+            <h1>Chương 1: Chiến Lược Đế Chế</h1>
+            <h2>Xây Dựng Portfolio Cá Nhân</h2>
+            <p>Giống như các hoàng đế La Mã xây dựng đế chế của mình trên nền tảng vững chắc, một lập trình viên thành công cần xây dựng thương hiệu cá nhân mạnh mẽ.</p>
+        </div>
+
+        <section>
+            <h3>🎯 Mục Tiêu Chương</h3>
+            <p>Trong chương này, bạn sẽ học cách tạo ra một website portfolio chuyên nghiệp sử dụng HTML và CSS thuần túy, lấy cảm hứng từ kiến trúc La Mã cổ đại.</p>
+            
+            <h4>Bạn sẽ học được:</h4>
+            <ul>
+                <li>Thiết kế layout responsive với CSS Grid và Flexbox</li>
+                <li>Tối ưu hóa SEO cơ bản</li>
+                <li>Tạo hiệu ứng animation mượt mà</li>
+                <li>Xây dựng thương hiệu cá nhân mạnh mẽ</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>🏛️ Nguyên Tắc Thiết Kế La Mã</h3>
+            <p>Người La Mã nổi tiếng với kiến trúc vững chắc và thẩm mỹ cao. Họ sử dụng các nguyên tắc:</p>
+            <ul>
+                <li><strong>Symmetry (Đối xứng):</strong> Cân bằng hoàn hảo trong thiết kế</li>
+                <li><strong>Proportion (Tỷ lệ):</strong> Sử dụng tỷ lệ vàng</li>
+                <li><strong>Strength (Sức mạnh):</strong> Thiết kế bền vững và đáng tin cậy</li>
+                <li><strong>Beauty (Vẻ đẹp):</strong> Kết hợp chức năng và thẩm mỹ</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>📝 Cấu Trúc HTML Cơ Bản</h3>
+            <div class="code-example">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Marcus Aurelius - Frontend Developer&lt;/title&gt;
+    &lt;meta name="description" content="Portfolio của Marcus Aurelius - Lập trình viên Frontend chuyên nghiệp"&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header class="hero"&gt;
+        &lt;nav class="navbar"&gt;
+            &lt;div class="logo"&gt;Marcus Aurelius&lt;/div&gt;
+            &lt;ul class="nav-menu"&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Trang Chủ&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#about"&gt;Về Tôi&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#projects"&gt;Dự Án&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Liên Hệ&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        
+        &lt;div class="hero-content"&gt;
+            &lt;h1&gt;Marcus Aurelius&lt;/h1&gt;
+            &lt;p&gt;Frontend Developer &amp; Digital Emperor&lt;/p&gt;
+            &lt;button class="cta-button"&gt;Xem Dự Án&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;section id="about"&gt;
+            &lt;h2&gt;Về Tôi&lt;/h2&gt;
+            &lt;p&gt;Tôi là một lập trình viên Frontend với 5 năm kinh nghiệm...&lt;/p&gt;
+        &lt;/section&gt;
+        
+        &lt;section id="projects"&gt;
+            &lt;h2&gt;Dự Án&lt;/h2&gt;
+            &lt;div class="projects-grid"&gt;
+                &lt;!-- Project cards here --&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 Marcus Aurelius. Tất cả quyền được bảo lưu.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h3>🎨 CSS Styling với Chủ Đề La Mã</h3>
+            <div class="code-example">
+                <pre><code>/* CSS Variables cho chủ đề La Mã */
+:root {
+    --primary-color: #8B4513;    /* Nâu đất La Mã */
+    --secondary-color: #D2691E;  /* Cam đồng */
+    --accent-color: #FFD700;     /* Vàng hoàng đế */
+    --text-dark: #2C1810;        /* Đen than */
+    --text-light: #F5F5DC;       /* Kem nhẹ */
+    --bg-primary: #FDF5E6;       /* Nền kem */
+    --gradient-primary: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+}
+
+/* Hero Section với thiết kế La Mã */
+.hero {
+    min-height: 100vh;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"&gt;&lt;defs&gt;&lt;pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"&gt;&lt;circle cx="50" cy="50" r="1" fill="%23FFD700" opacity="0.1"/&gt;&lt;/pattern&gt;&lt;/defs&gt;&lt;rect width="100" height="100" fill="url(%23grain)"/&gt;&lt;/svg&gt;');
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.cta-button {
+    background: var(--accent-color);
+    color: var(--text-dark);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h3>📱 Responsive Design</h3>
+            <p>Giống như đế chế La Mã mở rộng khắp châu Âu, website của bạn cũng cần hoạt động tốt trên mọi thiết bị.</p>
+            
+            <div class="code-example">
+                <pre><code>/* Mobile First Approach */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .nav-menu {
+        display: none; /* Sẽ thêm mobile menu sau */
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h3>⚡ Hiệu Ứng Animation</h3>
+            <p>Thêm sự sống động cho portfolio với các hiệu ứng mượt mà:</p>
+            
+            <div class="code-example">
+                <pre><code>/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hover effects cho navigation */
+.nav-menu a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* Fade in animation cho projects */
+.project-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}</code></pre>
+            </div>
+        </section>
+
+        <section>
+            <h3>🔍 SEO Optimization</h3>
+            <p>Tối ưu hóa SEO để portfolio của bạn được tìm thấy dễ dàng:</p>
+            
+            <div class="code-example">
+                <pre><code>&lt;!-- Meta tags quan trọng --&gt;
+&lt;meta name="description" content="Portfolio của Marcus Aurelius - Lập trình viên Frontend chuyên nghiệp với 5 năm kinh nghiệm"&gt;
+&lt;meta name="keywords" content="frontend developer, web developer, HTML, CSS, JavaScript, portfolio"&gt;
+&lt;meta name="author" content="Marcus Aurelius"&gt;
+
+&lt;!-- Open Graph tags --&gt;
+&lt;meta property="og:title" content="Marcus Aurelius - Frontend Developer"&gt;
+&lt;meta property="og:description" content="Portfolio chuyên nghiệp của lập trình viên Frontend"&gt;
+&lt;meta property="og:image" content="https://yoursite.com/og-image.jpg"&gt;
+&lt;meta property="og:url" content="https://yoursite.com"&gt;
+
+&lt;!-- Structured Data --&gt;
+&lt;script type="application/ld+json"&gt;
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marcus Aurelius",
+    "jobTitle": "Frontend Developer",
+    "url": "https://yoursite.com",
+    "sameAs": [
+        "https://github.com/marcusaurelius",
+        "https://linkedin.com/in/marcusaurelius"
+    ]
+}
+&lt;/script&gt;</code></pre>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h3>🎯 Bài Tập Thực Hành</h3>
+            <p>Tạo portfolio cá nhân của riêng bạn với các yêu cầu sau:</p>
+            
+            <ol>
+                <li>Tạo cấu trúc HTML với header, navigation, hero section, about, projects, và footer</li>
+                <li>Áp dụng chủ đề màu sắc La Mã (nâu, cam, vàng)</li>
+                <li>Thiết kế responsive cho mobile, tablet, và desktop</li>
+                <li>Thêm hiệu ứng hover và animation</li>
+                <li>Tối ưu hóa SEO với meta tags phù hợp</li>
+                <li>Deploy lên GitHub Pages hoặc Netlify</li>
+            </ol>
+            
+            <div class="highlight">
+                <strong>Thời gian hoàn thành:</strong> 2-3 giờ<br>
+                <strong>Độ khó:</strong> ⭐⭐☆☆☆ (Dễ)
+            </div>
+        </section>
+
+        <section>
+            <h3>💡 Lời Khuyên Từ Hoàng Đế</h3>
+            <blockquote style="background: var(--gradient-secondary); padding: 2rem; border-radius: 10px; border-left: 5px solid var(--accent-color);">
+                <p><em>"Chất lượng của một website phản ánh chất lượng của người tạo ra nó. Hãy xây dựng portfolio như thể bạn đang xây dựng một đế chế - với sự chú ý đến từng chi tiết và tầm nhìn dài hạn."</em></p>
+                <cite>- Marcus Aurelius, Digital Emperor</cite>
+            </blockquote>
+        </section>
+
+        <section>
+            <h3>📚 Tài Liệu Tham Khảo</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN CSS Documentation</a></li>
+                <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS Grid Complete Guide</a></li>
+                <li><a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy - Game học Flexbox</a></li>
+                <li><a href="https://developers.google.com/search/docs/advanced/guidelines/overview" target="_blank">Google SEO Guidelines</a></li>
+            </ul>
+        </section>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="chapter2.html" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                <span>Chương Tiếp Theo</span>
+                <span>→</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html> 

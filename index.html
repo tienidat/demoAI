@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm Giàu Từ Code - 10 Bài Học Từ Đế Chế La Mã</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-icon">⚔️</span>
+                    <span class="logo-text">CodeEmpire</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about">Giới Thiệu</a></li>
+                    <li><a href="#chapters">Chương Sách</a></li>
+                    <li><a href="#preview">Xem Trước</a></li>
+                    <li><a href="#download" class="cta-button">Tải Sách</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-main">Làm Giàu Từ Code</span>
+                    <span class="title-sub">10 Bài Học Từ Đế Chế La Mã</span>
+                </h1>
+                <p class="hero-description">
+                    Khám phá bí quyết làm giàu thông qua lập trình web với 10 ví dụ thực tế 
+                    lấy cảm hứng từ những chiến lược kinh doanh của đế chế La Mã cổ đại.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('chapters')">
+                        <span class="btn-icon">📖</span>
+                        Đọc Ngay
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('preview')">
+                        <span class="btn-icon">👁️</span>
+                        Xem Trước
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="roman-architecture">
+                    <div class="colosseum"></div>
+                    <div class="code-symbols">
+                        <span class="code-symbol">&lt;/&gt;</span>
+                        <span class="code-symbol">{}</span>
+                        <span class="code-symbol">[]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Về Cuốn Sách</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Cuốn sách "Làm Giàu Từ Code - 10 Bài Học Từ Đế Chế La Mã" 
+                            kết hợp kiến thức lập trình web hiện đại với những nguyên tắc 
+                            kinh doanh bất hủ từ đế chế La Mã cổ đại.
+                        </p>
+                        <p>
+                            Thông qua 10 dự án thực tế, bạn sẽ học được cách xây dựng 
+                            các ứng dụng web có thể tạo ra thu nhập, từ những nguyên tắc 
+                            cơ bản đến các kỹ thuật nâng cao.
+                        </p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Dự Án Thực Tế</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Bài Tập Thực Hành</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Miễn Phí</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chapters" class="chapters-section">
+            <div class="container">
+                <h2 class="section-title">Nội Dung Sách</h2>
+                <div class="chapters-grid">
+                    <div class="chapter-card" onclick="openChapter(1)">
+                        <div class="chapter-number">01</div>
+                        <h3 class="chapter-title">Chiến Lược Đế Chế</h3>
+                        <p class="chapter-description">
+                            Xây dựng website portfolio cá nhân như một đế chế thương hiệu
+                        </p>
+                        <div class="chapter-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-card" onclick="openChapter(2)">
+                        <div class="chapter-number">02</div>
+                        <h3 class="chapter-title">Hệ Thống Giao Thông</h3>
+                        <p class="chapter-description">
+                            Tạo ứng dụng quản lý công việc như hệ thống đường La Mã
+                        </p>
+                        <div class="chapter-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">LocalStorage</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-card" onclick="openChapter(3)">
+                        <div class="chapter-number">03</div>
+                        <h3 class="chapter-title">Kho Báu Hoàng Đế</h3>
+                        <p class="chapter-description">
+                            Xây dựng ứng dụng quản lý tài chính cá nhân
+                        </p>
+                        <div class="chapter-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Charts</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-card" onclick="openChapter(4)">
+                        <div class="chapter-number">04</div>
+                        <h3 class="chapter-title">Đấu Trường Colosseum</h3>
+                        <p class="chapter-description">
+                            Tạo game đơn giản với JavaScript
+                        </p>
+                        <div class="chapter-tech">
+                            <span class="tech-tag">Canvas</span>
+                            <span class="tech-tag">Game Logic</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-card" onclick="openChapter(5)">
+                        <div class="chapter-number">05</div>
+                        <h3 class="chapter-title">Thư Viện Alexandria</h3>
+                        <p class="chapter-description">
+                            Xây dựng ứng dụng ghi chú và quản lý kiến thức
+                        </p>
+                        <div class="chapter-tech">
+                            <span class="tech-tag">CRUD</span>
+                            <span class="tech-tag">Search</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-card" onclick="openChapter(6)">
+                        <div class="chapter-number">06</div>
+                        <h3 class="chapter-title">Hệ Thống Thủy Lợi</h3>
+                        <p class="chapter-description">
+                            Tạo ứng dụng quản lý dự án với workflow
+                        </p>
+                        <div class="chapter-tech">
+                            <span class="tech-tag">Drag & Drop</span>
+                            <span class="tech-tag">Kanban</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-card" onclick="openChapter(7)">
+                        <div class="chapter-number">07</div>
+                        <h3 class="chapter-title">Đồng Tiền La Mã</h3>
+                        <p class="chapter-description">
+                            Xây dựng ứng dụng chuyển đổi tiền tệ
+                        </p>
+                        <div class="chapter-tech">
+                            <span class="tech-tag">API</span>
+                            <span class="tech-tag">Fetch</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-card" onclick="openChapter(8)">
+                        <div class="chapter-number">08</div>
+                        <h3 class="chapter-title">Bản Đồ Đế Chế</h3>
+                        <p class="chapter-description">
+                            Tạo ứng dụng bản đồ tương tác
+                        </p>
+                        <div class="chapter-tech">
+                            <span class="tech-tag">Maps API</span>
+                            <span class="tech-tag">Geolocation</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-card" onclick="openChapter(9)">
+                        <div class="chapter-number">09</div>
+                        <h3 class="chapter-title">Thương Mại La Mã</h3>
+                        <p class="chapter-description">
+                            Xây dựng trang web thương mại điện tử
+                        </p>
+                        <div class="chapter-tech">
+                            <span class="tech-tag">E-commerce</span>
+                            <span class="tech-tag">Payment</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-card" onclick="openChapter(10)">
+                        <div class="chapter-number">10</div>
+                        <h3 class="chapter-title">Di Sản Đế Chế</h3>
+                        <p class="chapter-description">
+                            Tạo portfolio hoàn chỉnh và deploy
+                        </p>
+                        <div class="chapter-tech">
+                            <span class="tech-tag">Deploy</span>
+                            <span class="tech-tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="preview" class="preview-section">
+            <div class="container">
+                <h2 class="section-title">Xem Trước Nội Dung</h2>
+                <div class="preview-content">
+                    <div class="preview-text">
+                        <h3>Chương 1: Chiến Lược Đế Chế</h3>
+                        <p>
+                            "Giống như các hoàng đế La Mã xây dựng đế chế của mình trên nền tảng vững chắc, 
+                            một lập trình viên thành công cần xây dựng thương hiệu cá nhân mạnh mẽ. 
+                            Trong chương này, chúng ta sẽ tạo ra một website portfolio chuyên nghiệp 
+                            sử dụng HTML và CSS thuần túy."
+                        </p>
+                        <div class="preview-features">
+                            <h4>Bạn sẽ học được:</h4>
+                            <ul>
+                                <li>Thiết kế layout responsive</li>
+                                <li>Sử dụng CSS Grid và Flexbox</li>
+                                <li>Tối ưu hóa SEO cơ bản</li>
+                                <li>Tạo hiệu ứng animation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="preview-demo">
+                        <div class="demo-window">
+                            <div class="demo-header">
+                                <span class="demo-dot red"></span>
+                                <span class="demo-dot yellow"></span>
+                                <span class="demo-dot green"></span>
+                            </div>
+                            <div class="demo-content">
+                                <div class="demo-portfolio">
+                                    <div class="demo-nav">Home | About | Projects | Contact</div>
+                                    <div class="demo-hero">
+                                        <h2>Marcus Aurelius</h2>
+                                        <p>Frontend Developer & Digital Emperor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download-section">
+            <div class="container">
+                <div class="download-content">
+                    <h2 class="section-title">Tải Sách Miễn Phí</h2>
+                    <p class="download-description">
+                        Bắt đầu hành trình làm giàu từ code ngay hôm nay. 
+                        Cuốn sách hoàn toàn miễn phí và có thể tải về ngay lập tức.
+                    </p>
+                    <div class="download-options">
+                        <a href="book/lam-giau-tu-code.pdf" class="download-btn primary" download>
+                            <span class="btn-icon">📖</span>
+                            Tải PDF
+                        </a>
+                        <a href="book/lam-giau-tu-code.epub" class="download-btn secondary" download>
+                            <span class="btn-icon">📱</span>
+                            Tải EPUB
+                        </a>
+                        <a href="https://github.com/tienidat/demoAI" class="download-btn github" target="_blank">
+                            <span class="btn-icon">🐙</span>
+                            Xem Code
+                        </a>
+                    </div>
+                    <div class="download-stats">
+                        <div class="stat">
+                            <span class="stat-number">1,234</span>
+                            <span class="stat-label">Lượt tải</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.8</span>
+                            <span class="stat-label">Đánh giá</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">89%</span>
+                            <span class="stat-label">Hoàn thành</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CodeEmpire</h3>
+                    <p>Nơi kiến thức lập trình gặp gỡ lịch sử cổ đại</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên Kết</h4>
+                    <ul>
+                        <li><a href="#about">Về Chúng Tôi</a></li>
+                        <li><a href="#chapters">Nội Dung</a></li>
+                        <li><a href="#download">Tải Sách</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Theo Dõi</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">🐦 Twitter</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeEmpire. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
